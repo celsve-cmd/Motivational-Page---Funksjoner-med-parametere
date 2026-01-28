@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivation</title>
+
+    <style>
+        body {
+            /*background-color: rgba(18, 163, 182, 0.521);*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        #minDiv {
+            padding: 10px;
+        }
+
+        #bilde {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="overskrift">Litt motivasjon!</h1>
+
+    <div id="minDiv">Hei på deg</div>
+    <button onclick="endreDiv('pink','Smil til verden, og verden tar deg bakfra!', '25px')">Motivasjon</button>
+    <button onclick="endreDiv('lightgreen', 'Hvis ingen har sagt det til deg i dag; Nice ass!', '50px')">Kompliment</button>
+
+    <img id="bilde" src="motivation.jpg">
+
+
+    <script>
+
+
+        function endreDiv(color, tekst, fontSize){
+            document.getElementById('minDiv').style.color= color;
+            document.getElementById('minDiv').innerHTML= tekst;
+            document.getElementById('minDiv').style.fontSize= fontSize;
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
